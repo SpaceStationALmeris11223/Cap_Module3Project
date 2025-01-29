@@ -3,7 +3,7 @@
 
 #Store our ice creams shop's menu items
 flavors = ["Vanilla", "Caramel", "Mint", "Cookie Dough"]
-toppings = ["Sprinkles", "Nuts", "Cherry","Strawberrys"]
+toppings = ["sprinkles", "nuts", "cherry","strawberrys"]
 prices = {"Scoop":2.50, "Toppings": 0.50 }
 
 def display_menu ():
@@ -63,7 +63,6 @@ def get_toppings():
     #choosing 
     while True:
         topping = input("\nEnter a topping(or done if finished): ").lower
-
         if toppings == 'done':
             break
         #test if toppings are in shop
