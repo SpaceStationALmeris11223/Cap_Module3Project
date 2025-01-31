@@ -42,7 +42,7 @@ def get_flavors():
             print("Please enter a number.")
     
     #Prompt the user to enter an ice cream flavor
-    print("\nFor eac scoop, enter the flavor you'd like:")
+    print("\nFor each scoop, enter the flavor you'd like:")
     for i in range(num_scoops):# For loop prompts for each scoop of the ice cream
         #nested while loop handles user input and validation
         while True:
@@ -62,22 +62,23 @@ def get_toppings():
     #use while loop to prompt user for their toppings until they are done
     #choosing 
     while True:
-        topping = input("\nEnter a topping(or done if finished): ").lower
-        if toppings == 'done':
+        topping = input("\nEnter a topping( sprinkles, nuts, cherrys, strawberrys or done if finished): ").lower()
+        if topping == "done":
             break
         #test if toppings are in shop
         if topping in toppings:
-            chosen_toppings.append(toppings)
+            chosen_toppings.append(topping)
             print(f"added topping")
         else:
             print("Sorry that topping isn't available.")
+    
     return chosen_toppings
 
 def calculate_total(num_scoops, num_toppings):
     """Calculates the total cost of the order"""
     scoop_cost = num_scoops * prices["Scoop"]
     toppings_cost = num_toppings * prices["Toppings"]
-    return scoop_cost, toppings_cost
+    return scoop_cost + toppings_cost
 
 def print_receipt(num_scoops, chosen_flavors, chosen_toppings):
     print("\n=== Your Ice cream order ===")
