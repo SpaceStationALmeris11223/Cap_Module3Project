@@ -1,1 +1,1 @@
-/nOrder: 1 scoops -$3.00/nOrder: 3 scoops -$7.50
+/nOrder: 1 scoops -$3.00/nOrder: 3 scoops -$7.50/nOrder: 1 scoops -$3.00/nOrder: 4 scoops, cake cone -$9.90/nOrder: 1 scoops, waffle cone -$3.00/nOrder: 1 scoops, sugar cone -$2.50
